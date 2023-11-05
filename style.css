@@ -153,7 +153,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
     }
 
     .img { 
@@ -174,7 +173,8 @@ body {
     margin-top: 5%;
 }
     .text{
-        width: 500px;
+        width: 70%;
+        height: auto;
         font-size: 30px;
         margin-left: 10%;
     }
@@ -182,10 +182,12 @@ body {
         display: flex;
         align-items: center;
         gap: 30%;
+    
         
     }
     .imag{
         width: auto;
+        margin-right:10%;
         
     } 
     .img{
@@ -210,9 +212,12 @@ body {
     opacity: 0.2;
 }
 
-#explore {
-    width: 100%;
+.explore {
+    width: auto;
     height: 100vh;
+    margin-top: 5%;
+    padding: 15px 0px;
+
 }
 
 .slider{
@@ -228,7 +233,7 @@ body {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
-    width: 100%;
+    width: 8%;
     height: auto;
   }
   
@@ -256,16 +261,9 @@ body {
   }
 .container2{
     position: relative;
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
     margin-top: 10rem;
-}
-.explorediv{
-    display: block;
-    position: relative;
-    max-width:70%;
-     margin: 0 auto;
-     margin-top: 10rem;
 }
 .titleex{
     width: 100%;
