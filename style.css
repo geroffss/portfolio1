@@ -141,7 +141,7 @@ body {
     }
 
     .text h1 {
-        font-size: 40px;
+        font-size: 36px;
         margin: 0;
     }
 
@@ -153,6 +153,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 80%;
     }
 
     .img { 
@@ -173,7 +174,7 @@ body {
     margin-top: 5%;
 }
     .text{
-        width: 70%;
+        width: 40%;
         height: auto;
         font-size: 30px;
         margin-left: 10%;
@@ -181,18 +182,21 @@ body {
     .textimg{
         display: flex;
         align-items: center;
-        gap: 30%;
-    
+        width: 100%;
         
     }
     .imag{
-        width: auto;
-        margin-right:10%;
+        width: 80%;
+        height: auto;
+        margin-right: 10%;
         
     } 
     .img{
         border-radius: 25% 15% 15% 60%;
         box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.10);
+        float: right;
+        width: 400px;
+        height: auto;
         
     }
 
@@ -207,15 +211,10 @@ body {
             border-radius: 40px;
             padding: 15px 30px;
         }
-.hr {
-    width: 80%;
-    opacity: 0.2;
-}
 
 .explore {
-    width: auto;
-    height: 100vh;
-    margin-top: 5%;
+    width: 100%;
+    margin-top: 10%;
     padding: 15px 0px;
 
 }
