@@ -124,6 +124,9 @@ body {
     .main{
         
     }
+    .home1{
+        height: 100vh;
+    }
     .textimg {
         display: flex;
         flex-direction: column-reverse;
