@@ -138,6 +138,7 @@ body {
         max-width: 100%; 
         height: auto; 
     }
+    
     .buttons{
         justify-content: center;
     }
@@ -171,8 +172,8 @@ body {
     .buttons{
         display: flex;
         align-items: center;
-        margin-left: 10%;
         gap: 2.5%;
+        margin: 0 10%;
     }
         .rectangle-5{
             background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
