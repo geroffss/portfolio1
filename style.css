@@ -1,0 +1,144 @@
+body {
+    background-color: #302C42;
+    color: white;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav{
+    width: 100%;
+    background: #302C42;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.10);
+}
+.home {
+    color: white;
+    display: flex;
+    align-items: center;
+   }
+
+    .topmenu {
+    color: lightgray;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration:none;
+  
+  }
+  
+  .topmenu:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .topdiv {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+    padding-right: 3rem;
+    align-items: center;
+
+  }
+    .contact{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: lightgray;
+        margin: 10px;
+        font-size: 20px;
+        text-decoration:none;
+        gap: 2rem;
+    }
+        .contactbtn{
+            border: solid;
+            border-color: aqua;
+            border-radius: 40px;
+            border: 2px solid #FFF;
+            padding: 15px 30px;
+        }
+
+        .join{
+            padding: 15px 30px;
+            border: transparent;
+            border-radius: 40px;
+            background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+        }
+  .hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+  
+.logo {
+    display: flex;
+    gap: 1rem;
+    padding-left: 2rem;
+    font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+    .home {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .topdiv {
+        display: none; 
+    }
+    .contact {
+        display: none;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-left:auto;
+        padding-right: 3rem;
+        align-items: center;
+    }
+}
+
+.main{
+    width: 100%;
+    margin-top: 5%;
+}
+    .text{
+        width: 30%;
+        font-size: 30px;
+        margin-left: 10%;
+    }
+    .textimg{
+        display: flex;
+        align-items: center;
+        
+    }
+    .imag{
+        margin-left: auto;
+        margin-right: 5%;
+        
+    } 
+    .img{
+        border-radius: 25% 15% 15% 60%;
+        box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.10);
+        
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        margin-left: 10%;
+        gap: 2.5%;
+    }
+        .rectangle-5{
+            background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+            border-radius: 40px;
+            padding: 15px 30px;
+        }
