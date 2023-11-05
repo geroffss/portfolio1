@@ -81,7 +81,7 @@ body {
     padding-left: 2rem;
     font-size: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .home {
         justify-content: space-between;
         padding: 10px 20px;
@@ -94,7 +94,6 @@ body {
         display: none;
     }
     .logo {
-        display: flex;
         align-items: center;
     }
     .hamburger {
@@ -104,6 +103,44 @@ body {
         padding-right: 3rem;
         align-items: center;
     }
+    
+    .main{
+        width: 100%;
+    }
+    .textimg {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:  center;
+    }
+
+    .text {
+        width: 400px;
+        margin: 10%;
+    }
+
+    .text h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+    .imag {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+    }
+
+    .img {
+        max-width: 100%; 
+        height: auto; 
+    }
+    .buttons{
+        justify-content: center;
+    }
 }
 
 .main{
@@ -111,7 +148,7 @@ body {
     margin-top: 5%;
 }
     .text{
-        width: 30%;
+        width: 500px;
         font-size: 30px;
         margin-left: 10%;
     }
