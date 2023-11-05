@@ -94,7 +94,10 @@ body {
         display: none;
     }
     .logo {
-        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        gap: 1rem;
     }
     .hamburger {
         display: block;
