@@ -6,16 +6,12 @@ body {
 .nav{
     background: #302C42;
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.10);
-    width: 100%;
 }
 .home{
-    display: flex;
     flex-direction: row;
-    justify-items: space-between;
     color: white;
     display: flex;
     align-items: center;
-    align-content: center;
 }
 .logo{
     display: flex;
@@ -47,6 +43,11 @@ body {
     margin-right: 2%;
 
   }
+
+  .topdiv2{
+    display: none;
+    overflow: hidden;
+  }
   .contact{
     display: flex;
     flex-direction: row;
@@ -60,26 +61,39 @@ body {
     padding: 15px 30px;en
     
 }
+
 .join{
     padding: 15px 30px;
-    border: transparent;
-    border-radius: 40px;
-    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
-}
+        border: transparent;
+        border-radius: 40px;
+        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    }
 
 .hamburger {
-    display: none;
-}
-
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 2; /* Ensure the hamburger menu is above other elements */
+    }
+    
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #ffffff;
-}
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 .main {
     display: flex;
     flex-direction: column;
@@ -189,6 +203,27 @@ body {
     .topdiv {
         display: none; 
     }
+    .topdiv.active{
+            display: flex;
+            flex-direction: column;
+            background-color: wheat;
+        }
+
+    .topdiv2.active{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: #8176af56;
+        padding-top: 10%;
+        z-index: 1; /* Place the overlay behind the menu but above other content */
+    }
+    .topdiv2 .topmenu{
+        margin-right: 5%;
+    }
     .contact {
         display: none;
     }
@@ -220,20 +255,32 @@ body {
         align-items: center;
         max-width: 100%;
         height: auto;
+        margin: 0 5%;
     }
     .textimg{
         flex-direction: column-reverse;
-        width: 300px;
         height: auto;
+        justify-items: center;
+        align-items: center;
     }
     .text{
-        max-width: 100%;
-        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .text h1{
+        font-size:xx-large;
+    }
+
+    .text p{
+        font-size:large;
     }
     .buttons{
         margin: 0;
         display: flex;
         flex-direction: row;
         gap: 50px;
+    }
+    .titleex{
+        text-align: center;
     }
   }
