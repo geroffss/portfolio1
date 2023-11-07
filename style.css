@@ -200,7 +200,6 @@ body {
     opacity: 1;
   }
 
-  /* Skills */
 .all_skills {
     display: flex;
     flex-direction: row;
@@ -254,12 +253,6 @@ body {
     margin-block-start: 5px;
     margin-block-end: 5px;
   } 
-  
-  .flex_center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   @media screen and (max-width: 975px) {
     .home {
