@@ -1,12 +1,38 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.querySelector(".hamburger");
-const topdiv = document.querySelector(".topdiv2");
+    const topDiv = document.querySelector(".topdiv2");
+    const mainSection = document.querySelector(".main");
 
-hamburger.addEventListener("click", toggleMenu);
+    hamburger.addEventListener("click", toggleMenu);
 
-function toggleMenu() {
-    topdiv.classList.toggle("active");
-}
+    function toggleMenu() {
+        topDiv.classList.toggle("active");
+
+    }
+
+    mainSection.addEventListener("mouseover", closeMenu);
+
+    function closeMenu() {
+        topDiv.classList.remove("active");
+    }
+
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const descriptions = document.querySelectorAll(".description");
+    const skills = document.querySelectorAll(".skill");
 
+    skills.forEach(function(skill, index) {
+        skill.addEventListener("mouseover", function() {
+            descriptions[index].style.display = "block";
+            skills[index].style.height = "200px";
+            skills[index].style.width = "auto";
+        });
+
+        skill.addEventListener("mouseleave", function() {
+            descriptions[index].style.display = "none";
+            skills[index].style.height = "150px";
+            skills[index].style.width = "auto";
+        });
+    });
+});
