@@ -95,7 +95,7 @@ function toggleForms() {
     if (urlParams.has('login')) {
         showForm(loginForm, signupForm);
     }
-}
+};
 
 document.addEventListener('DOMContentLoaded', toggleForms);
 
