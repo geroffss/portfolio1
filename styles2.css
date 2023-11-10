@@ -1,30 +1,49 @@
-/* styles2.css */
-.container {
-  max-width: 400px;
+body {
+  background-color: #302C42;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+
+}
+.forms{
   margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
+  padding: 50px;
+  border: 1px solid rgba(204, 204, 204, 0.218)fff;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.signupform{
+  display: none;
 }
 
-h2 {
+.loginform{
+  display: none;
+}
+.signupform h2 {
   text-align: center;
 }
 
-form {
+.signupform form {
   display: flex;
   flex-direction: column;
 }
 
-input[type="text"],
-input[type="password"] {
+.signupform input[type="text"],
+input[type="password"],
+input[type="email"]{
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.login-form {
+.signupform .login-form {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -36,28 +55,91 @@ input[type="password"] {
   display: none;
 }
 
-.login-form.show {
+.btn2{
+  margin: 10px; 
+}
+.signupform .login-form.show {
   display: block;
   animation: slideIn 0.5s ease-in-out;
 }
 
 @keyframes slideIn {
   0% {
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, -200%  );
   }
   100% {
     transform: translate(-50%, -50%);
   }
 }
-button[type="submit"] {
+.signupform  button[type="submit"],
+          button[type="text"] {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #4CAF50;
+  background-color:#302C42;
   color: white;
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.signupformbutton[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.loginform h2 {
+  text-align: center;
+}
+
+.loginform form {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginform input[type="text"],
+input[type="password"],
+input[type="email"]{
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.loginform .login-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  display: none;
+}
+
+.btn2{
+  margin: 10px; 
+}
+.loginform .login-form.show {
+  display: block;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translate(-50%, -200%  );
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+.loginform button[type="submit"],
+          button[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color:#302C42;
+  color: white;
+  cursor: pointer;
+}
+
+.loginformbutton[type="submit"]:hover {
   background-color: #45a049;
 }
