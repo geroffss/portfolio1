@@ -120,6 +120,7 @@ a.join:visited {
 .textimg{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 2% 5%;
     color: white;
 }
@@ -157,6 +158,7 @@ a.join:visited {
         background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
         border-radius: 40px;
         padding: 15px 30px;
+        height: auto;
     }
 
 .explore{
@@ -360,4 +362,8 @@ a.join:visited {
     .titleex{
         text-align: center;
     }
+    .arrowimg{
+        display: none;
+    }
+
   }

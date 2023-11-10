@@ -5,6 +5,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="styles2.css">
     <script src="script.js"></script>
+    <script src="validGoHome.js"></script>
 </head>
 <body>
   <div class="forms">
@@ -15,10 +16,10 @@
     <div class="signupform" id="signupform">
         <h2>New user</h2>
         <form>
-          <input type="text" placeholder="Username">
-          <input type="password" placeholder="Password">
-          <input type="email" placeholder="Email Address">
-          <button  type="submit"  class="btn2" id="signup" onclick="addSignedUpToUrl ()">Sign up</button>
+          <input type="text" placeholder="Username" required>
+          <input type="password" placeholder="Password" required>
+          <input type="email" placeholder="Email Address" required>
+          <button type="submit" id="gohome2" onclick="validGoHome()">Sign up</button>
         </form>
    </div>
    <div class="loginform" id="loginform">
@@ -26,12 +27,9 @@
     <form>
       <input type="text" placeholder="Username">
       <input type="password" placeholder="Password">
-      <button type="submit" id="gohome" onclick="goHome ()">Login</button>
+      <button type="submit" id="gohome">Login</button>
     </form>
 </div>
 </div>
-<script src="script.js">
-  window.onload = toggleForms;
-</script>
 </body>
 </html>
