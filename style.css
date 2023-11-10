@@ -13,6 +13,12 @@ body {
     display: flex;
     align-items: center;
 }
+a.contactbtn:active,
+a.contactbtn:visited,
+a.join:active,
+a.join:visited {
+    color: inherit; /* or any other color you prefer */
+}
 .logo{
     display: flex;
     flex-direction: row;
@@ -61,9 +67,13 @@ body {
     border-radius: 40px;
     border: 2px solid #FFF;
     padding: 15px 30px;
-	cursor: pointer;
+	  cursor: pointer;
+    text-decoration: none;
 
     
+}
+.login-container{
+    display: none;
 }
 
 .join{
@@ -72,6 +82,7 @@ body {
         border-radius: 40px;
         background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
         cursor: pointer;
+        text-decoration: none;
     }
 
 .hamburger {
@@ -275,10 +286,11 @@ body {
         align-items: end;
         top: 0;
         right: 0;
-        width: 50%;
+        width: 100%;
+        height: auto;
         background-color: #8176afaa;
         backdrop-filter: blur(10px);
-        padding-top: 5%;
+        padding-top: 10%;
         border-radius: 0px 0px 0px 25px;
         right: 0;
         
@@ -286,6 +298,7 @@ body {
     
     .topdiv2 .topmenu{
         margin-right: 5%;
+        color: white;
     }
     .contact {
         display: none;
@@ -319,6 +332,7 @@ body {
         max-width: 100%;
         height: auto;
         margin: 0 5%;
+
     }
     .textimg{
         flex-direction: column-reverse;
