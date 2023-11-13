@@ -10,6 +10,33 @@
             <title>gnagyosy</title>
     </head>
     <body>
+      <script>
+       function showProfilePage() {
+            const loginTimestamp = localStorage.getItem('loginTimestamp');
+            const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+            const thirtySecondsHasPassed = Date.now() - Number(loginTimestamp) > 30000;
+
+            if (isLoggedIn && !thirtySecondsHasPassed) {
+                document.querySelector(".contactbtn").style.display = "none";
+                document.querySelector(".signoutbtn").style.display = "block";
+                document.querySelector(".profilebtn").style.display = "block";
+                document.querySelector(".join").style.display = "none";
+            } else {
+                alert("You are not logged in!");
+                localStorage.removeItem('isLoggedIn');
+                localStorage.removeItem('loginTimestamp');
+            }
+        }
+        // Execute showProfilePage when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', showProfilePage);
+
+        document.addEventListener('DOMContentLoaded', function() {
+           document.querySelector(".signoutbtn").addEventListener("click", function() {
+           localStorage.removeItem('isLoggedIn');
+           localStorage.removeItem('loginTimestamp');
+    });
+});
+      </script>
         <head>
             <nav>
                 <div class="nav">
@@ -24,8 +51,10 @@
                           <a class="topmenu" href="#projects">Projects</a>
                           <a class="topmenu" href="#recommendations">Recommendation</a>
                            <div class="contact">
-                          <a class="contactbtn" href="contact.html?login"  id="loginbtn">Login</a>
-                          <a class="join" href="contact.html?join">Join Hydra</a>
+                          <a class="contactbtn" href="login.html"  id="loginbtn">Login</a>
+                          <a class="join" href="signup.html">Join Hydra</a>
+                          <a class="join profilebtn" href="profile.html">Profile</a>
+                          <a class="join signoutbtn" href="index.html">Sign Out</a>
                              </div>
                         </div>
                         <div class="topdiv2">
