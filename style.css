@@ -19,6 +19,12 @@ a.join:active,
 a.join:visited {
     color: inherit; /* or any other color you prefer */
 }
+.signoutbtn{
+    display: none;
+}
+.profilebtn {
+    display: none;
+}
 .logo{
     display: flex;
     flex-direction: row;
